@@ -9,3 +9,6 @@ Optional flags: --cv_engine, --training_en, --no_classification, --no_pickle, --
 Note:
 On MacOS you might need to set LC_ALL and LANG for UTF-8:
 env LC_ALL=en_US.UTF-8 LANG=en_US.UTF-8 python main.py -t [train_img_base] -x [test_img_base] -p [pickle_path] -c [cm_dump_path]
+
+Charls74 Database was used for developing this environment:
+http://www.ee.surrey.ac.uk/CVSSP/demos/chars74k
