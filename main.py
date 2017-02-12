@@ -67,15 +67,17 @@ def main(argv):
             args.pickle_path = user_arg
         elif opt in "-c":
             args.cm_dump_path = user_arg
-        elif opt in "cv_engine":
-            args.training_en = user_arg
-        elif opt in "training_en":
+        elif opt in "--cv_engine":
+            cv_engine = user_arg
+        elif opt in "--training_en":
             args.training_en = True
-        elif opt in "no_classification":
+        elif opt in "--no_classification":
             args.classification_en = False
-        elif opt in "no_pickle":
+        elif opt in "--no_pickle":
             args.pickle_en = False
-        elif opt in "knn_study_en":
+        elif opt in "--plot_en":
+            args.plot_en = True
+        elif opt in "--knn_study_en":
             args.knn_study_en = True
 
     # -- .. -- .. -- .. -- .. -- .. -- .. -- .. -- .. -- .. -- .. -- .. -- .. -- .. -- .. -- .. -- ..
